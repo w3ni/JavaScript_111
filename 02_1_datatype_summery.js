@@ -43,3 +43,30 @@ console.log("BigNum :", typeof BigNum);
 console.log("myobj :",typeof myobj);
 console.log("myfunct :",typeof myfunct);
 console.log("heros",typeof heros);
+
+
+// --------------------------------------------
+
+// Stack (Premitive), Heap (Non-Premitive)
+
+// let myoldname = "abhishek"
+// let newName = myoldname
+// newName = "AKV"
+
+// console.log(myoldname);
+// console.log(newName);
+
+let userOne = {
+    email : "user@google.com",
+    upi : "user@ybl"    
+}
+
+// Stack provid copy
+// Heap return orginal value refrence not copy
+
+let userTwo = userOne;
+
+userTwo.email = "userTwo@gmail.com";
+
+console.log(userOne.email);
+console.log(userTwo.email);
