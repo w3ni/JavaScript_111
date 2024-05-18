@@ -20,7 +20,7 @@ const regularUser = {
     }
 }
 
-console.log(regularUser.fullname.userfullname.first);
+// console.log(regularUser.fullname.userfullname.first);
 
 // ? use for optional chaining
 
@@ -43,9 +43,25 @@ const users = [
 
 // users[1].email
 
-console.log(tinderUser)
+/*
+console.log(tinderUser);
 console.log(Object.keys(tinderUser));
 console.log(Object.values(tinderUser));
 console.log(Object.entries(tinderUser));
 
 console.log(tinderUser.hasOwnProperty('isLogged'))
+
+*/
+
+const course = {
+    coursename : "javascript",
+    price : "9999",
+    courseInstructor : "Abhishek"
+}
+
+// de-structured 
+const {courseInstructor : instructor} = course
+
+console.log(course.courseInstructor);
+console.log(instructor);
+
